@@ -38,7 +38,7 @@ with st.expander('Analizar Polaridad y Subjetividad en un texto'):
         if x >= 0.5:
             st.write('Es un sentimiento Positivo 😊')
             st.image('Feli.jpg', width=300)  # Imagen positiva
-            st.audio('sonidos/positivo.mp3')  # Sonido para sentimiento positivo
+            st.audio('happy.mp3')  # Sonido para sentimiento positivo
         elif x <= -0.5:
             st.write( 'Es un sentimiento Negativo 😔')
             st.image('sad.jpg', width=300)  
@@ -46,7 +46,7 @@ with st.expander('Analizar Polaridad y Subjetividad en un texto'):
         else:
             st.write( 'Es un sentimiento Neutral 😐')
             st.image('neutral.jpg', width=300)  # Imagen positiva
-            st.audio('sonidos/positivo.mp3')  # Sonido para sentimiento positivo
+            st.audio('huh.mp3')  # Sonido para sentimiento positivo
 
 with st.expander('Corrección en inglés'):
        text2 = st.text_area('Escribe por favor: ',key='4')
