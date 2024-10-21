@@ -37,15 +37,15 @@ with st.expander('Analizar Polaridad y Subjetividad en un texto'):
         x=round(blob.sentiment.polarity,2)
         if x >= 0.5:
             st.write('Es un sentimiento Positivo 😊')
-            st.image('imagenes/positivo.png', width=300)  # Imagen positiva
+            st.image('Feli.jpg', width=300)  # Imagen positiva
             st.audio('sonidos/positivo.mp3')  # Sonido para sentimiento positivo
         elif x <= -0.5:
             st.write( 'Es un sentimiento Negativo 😔')
-            st.image('imagenes/positivo.png', width=300)  # Imagen positiva
+            st.image('sad.jpg', width=300)  # Imagen positiva
             st.audio('sonidos/positivo.mp3')  # Sonido para sentimiento positivo
         else:
             st.write( 'Es un sentimiento Neutral 😐')
-            st.image('imagenes/positivo.png', width=300)  # Imagen positiva
+            st.image('neutral.jpg', width=300)  # Imagen positiva
             st.audio('sonidos/positivo.mp3')  # Sonido para sentimiento positivo
 
 with st.expander('Corrección en inglés'):
