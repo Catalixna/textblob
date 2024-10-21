@@ -3,7 +3,7 @@ from textblob import TextBlob
 from googletrans import Translator
 
 translator = Translator()
-st.markdown("<h1 style='text-align: center; color: #2e3547;'>Textblob mide tus emociones</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: #2a3a65;'>Textblob mide tus emociones</h1>", unsafe_allow_html=True)
 
 st.subheader("Escribe la frase que deseas analizar:")
 st.write("Escribe una palabra que sea un sentimiento.")
