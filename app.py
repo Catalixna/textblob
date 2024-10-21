@@ -3,18 +3,19 @@ from textblob import TextBlob
 from googletrans import Translator
 
 translator = Translator()
-st.title('Uso de textblob')
+st.markdown("<h1 style='text-align: center; color: blue;'>Textblob mide tus emociones</h1>", unsafe_allow_html=True)
 
-st.subheader("Por favor escribe en el campo de texto la frase que deseas analizar")
+st.subheader("Escribe la frase que deseas analizar:")
+st.write("Escribe una palabra que sea un sentimiento.")
 with st.sidebar:
                st.subheader("Polaridad y Subjetividad")
                ("""
-               Una breve guía de los parámetros:
+               **Una breve guía de los parámetros:**
                 
-                Polaridad: Indica si el sentimiento expresado en el texto es positivo, negativo o neutral. 
-                Su valor oscila entre -1 (muy negativo) y 1 (muy positivo), con 0 representando un sentimiento neutral.
+                **Polaridad:** Este dira si el texto puesto es positivo, negativo o neutral. 
+                Si el valor esta entre -1 (muy negativo) y 1 (muy positivo), con 0 un sentimiento neutral.
                 
-               Subjetividad: Mide cuánto del contenido es subjetivo (opiniones, emociones, creencias) frente a objetivo
+               **Subjetividad:** Mide cuánto del contenido es subjetivo (opiniones, emociones, creencias) frente a objetivo
                (hechos). Va de 0 a 1, donde 0 es completamente objetivo y 1 es completamente subjetivo.
 
                  """
@@ -22,7 +23,7 @@ with st.sidebar:
 
 
 with st.expander('Analizar Polaridad y Subjetividad en un texto'):
-    text1 = st.text_area('Escribe por favor: ')
+    text1 = st.text_area('Escribe aqui: ')
     if text1:
 
         #translation = translator.translate(text1, src="es", dest="en")
