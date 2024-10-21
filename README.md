@@ -1,2 +1,1 @@
-# textblob
-TextBlob mio
+# tx2_analisis
